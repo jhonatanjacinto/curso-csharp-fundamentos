@@ -5,22 +5,98 @@
 
 using OOP;
 
-Console.WriteLine("## Introdução a Orientação a Objetos ##");
+// Console.WriteLine("## Introdução a Orientação a Objetos ##");
 
-// Objeto (instância) do tipo Produto
-var produto1 = new Produto();
-produto1.Id = 1;
-produto1.Nome = "Arroz Tio João";
-produto1.Descricao = "Arroz Tipo 1 Branco";
-produto1.Preco = 100m;
-produto1.Categoria = "Alimentos";
+// var produto1 = new Produto(22, "Arroz Tio João", "Minha descrição 1");
+// //
+// var produto2 = new Produto()
+// {
+//     Id = 2,
+//     Nome = "Feijão Camil",
+//     Preco = 15.00m
+// };
+// //
+// var produto3 = new Produto("Açúcar União")
+// {
+//     Id = 3,
+//     Preco = 10.00m
+// };
 
-var produto2 = new Produto();
-produto2.Id = 2;
-produto2.Nome = "Feijão Camil";
-produto2.Preco = 200m;
+//
+// var produto4 = new Produto();
+// produto4.ExibirCategorias("Alimentos", "Frios");
+//
+// Console.WriteLine($"O valor padrão de desconto é: {Produto.Desconto}");
+// Console.WriteLine($"Valor do Produto 1 aplicado desconto: {produto1.AplicarDesconto()}");
+// Console.WriteLine($"Valor do Produto 2 aplicado desconto: {Produto.AplicarDesconto(produto2.Preco)}");
+// Console.WriteLine($"Valor do Produto 2 aplicado desconto: {Produto.AplicarDesconto(produto2.Preco, 0.15m)}");
 
-Console.WriteLine($"Produto 1: {produto1.Nome}");
-Console.WriteLine($"Produto 2: {produto2.Nome}");
-Console.WriteLine($"Produto 1 com Desconto: {produto1.AplicarDesconto()}");
-Console.WriteLine($"Produto 2 com Desconto: {produto2.AplicarDesconto()}");
+//
+// Console.WriteLine("### Passagem de argumento por referencia e por valor ###");
+//
+// int x = 5;
+// var y = Calculadora.DobraValor(x);
+//
+// Console.WriteLine($"O valor de X é: {x}"); // 5
+// Console.WriteLine($"O valor de Y é: {y}"); // 10
+// Console.WriteLine();
+//
+// Calculadora.DobraValor(ref x);
+//
+// Console.WriteLine($"O valor de X é: {x}"); // 10
+// Console.WriteLine($"O valor de Y é: {y}"); // 10
+// Console.WriteLine();
+//
+// Calculadora.DobraValor(x, out y);
+//
+// Console.WriteLine($"O valor de X é: {x}"); // 10
+// Console.WriteLine($"O valor de Y é: {y}"); // 20
+//
+// Console.WriteLine();
+
+// var onibus1 = new Onibus()
+// {
+//     Codigo = 2251,
+//     Marca = "Caio",
+//     Modelo = "Apache Vip5"
+// };
+//
+// var onibus2 = new Onibus()
+// {
+//     Codigo = 332,
+//     Marca = "Marcopolo",
+//     Modelo = "Torino"
+// };
+//
+// Onibus.Empresa = "ETT Carapicuíba";
+// Onibus.Linhas.Add("Jd. Santa Brigida");
+//
+// Console.WriteLine($"A lista de linhas disponíveis para Onibus1: {string.Join(", ", onibus1.GetLinhas())}");
+// Console.WriteLine($"A lista de linhas disponíveis para Onibus2: {string.Join(", ", onibus2.GetLinhas())}");
+// Console.WriteLine($"Empresa: {onibus1.GetEmpresa()}");
+// Console.WriteLine($"Empresa: {onibus2.GetEmpresa()}");
+
+var animal0 = new Animal();
+
+var animal1 = new Gato()
+{
+    Genero = "Fêmea"
+};
+
+animal1.Andar();
+animal1.Pular();
+animal1.Comer();
+animal1.Miar();
+animal1.Correr();
+
+var animal2 = new Papagaio()
+{
+  Genero = "Macho"
+};
+
+animal2.Andar();
+animal2.Pular();
+animal2.Comer();
+animal2.Voar();
+
+Console.WriteLine($"A espécie de animal2 é: {animal2.Especie}");
