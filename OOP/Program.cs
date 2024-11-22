@@ -76,27 +76,51 @@ using OOP;
 // Console.WriteLine($"Empresa: {onibus1.GetEmpresa()}");
 // Console.WriteLine($"Empresa: {onibus2.GetEmpresa()}");
 
-var animal0 = new Animal();
+// var animal0 = new Animal();
+//
+// var animal1 = new Gato()
+// {
+//     Genero = "Fêmea"
+// };
+//
+// animal1.Andar();
+// animal1.Pular();
+// animal1.Comer();
+// animal1.Miar();
+// animal1.Correr();
+//
+// var animal2 = new Papagaio()
+// {
+//   Genero = "Macho"
+// };
+//
+// animal2.Andar();
+// animal2.Pular();
+// animal2.Comer();
+// animal2.Voar();
+//
+// Console.WriteLine($"A espécie de animal2 é: {animal2.Especie}");
 
-var animal1 = new Gato()
+// UsuarioAdmin u2 = new();
+// u2.Login();
+//
+// Usuario u3 = new UsuarioAdmin();
+// u3.Login();
+// u3.Logout();
+var p = new Papagaio();
+p.Andar();
+FazerVoar(p);
+
+var p2 = new Passarinho();
+FazerVoar(p2);
+
+var h = new Helicoptero();
+FazerVoar(h);
+
+var b = new Borboleta();
+FazerVoar(b);
+void FazerVoar(IVoavel obj)
 {
-    Genero = "Fêmea"
-};
-
-animal1.Andar();
-animal1.Pular();
-animal1.Comer();
-animal1.Miar();
-animal1.Correr();
-
-var animal2 = new Papagaio()
-{
-  Genero = "Macho"
-};
-
-animal2.Andar();
-animal2.Pular();
-animal2.Comer();
-animal2.Voar();
-
-Console.WriteLine($"A espécie de animal2 é: {animal2.Especie}");
+    // obj tem que poder voar (.Voar())
+    obj.Voar();
+}

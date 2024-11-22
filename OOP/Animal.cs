@@ -15,6 +15,5 @@ public class Animal
 
     protected void ExecutarSistemaDigestivo()
     {
-        
     }
 }

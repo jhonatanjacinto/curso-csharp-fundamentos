@@ -6,6 +6,8 @@ public class Produto
     public string Nome { get; set; } = string.Empty;
     public string Descricao { get; set; } = string.Empty;
 
+    public bool IsPremium { get; set; } = false;
+
     // Sobrecarga de Construtor (Constructor Overloading) 
     public Produto()
     {

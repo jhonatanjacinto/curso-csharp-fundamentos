@@ -1,6 +1,6 @@
 ﻿namespace OOP;
 
-public class Papagaio : Animal
+public class Papagaio : Ave
 {
     public Papagaio()
     {
@@ -9,6 +9,4 @@ public class Papagaio : Animal
         Olhos = 2;
         ExecutarSistemaDigestivo();
     }
-    public void Voar() => Console.WriteLine($"O animal {Nome} está voando...");
-    
 }
